@@ -1,5 +1,6 @@
 def tuple_max_min_dict(dict_1: dict) -> tuple:
     max_v = min_v = list(dict_1.items())[0][1]
+    max_k = min_k = list(dict_1.items())[0][0]
     for i in range(len(dict_1)):
         if list(dict_1.items())[i][1] < min_v:
             min_v = list(dict_1.items())[i][1]
@@ -20,10 +21,10 @@ def list_tuple_dict(dict_1: dict) -> list:
 def dict_2lists(list_1: list, list_2: list) -> dict:
     dict_1 = {}
     if len(list_1) > len(list_2):
-        min = len(list_2)
+        min_l = len(list_2)
     else:
-        min = len(list_1)
-    for i in range(min):
+        min_l = len(list_1)
+    for i in range(min_l):
         dict_1[f"{list_1[i]}"] = list_2[i]
     return dict_1
 
