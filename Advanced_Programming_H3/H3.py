@@ -52,9 +52,3 @@ def dict_list_values_2dict(dict_1: dict, dict_2: dict) -> dict:
             dict_1[list(dict_1.items())[i][0]] = [list(dict_1.items())[i][1]]
     dict_1.update(dict_2)
     return dict_1
-
-
-
-
-
-
